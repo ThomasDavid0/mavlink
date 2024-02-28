@@ -1631,6 +1631,18 @@
       <field type="float" name="rpm1">RPM Sensor1.</field>
       <field type="float" name="rpm2">RPM Sensor2.</field>
     </message>
+    <message id="227" name="CUSTOM_CONTROLLER_INFO">
+      <description>Information about a custom PID controller.</description>
+      <field type="uint8_t" name="control_id">Control ID.</field>
+      <field type="float" name="signal">Current</field>
+      <field type="float" name="target">Target</field>
+      <field type="float" name="FF">FF</field>
+      <field type="float" name="P">P</field>
+      <field type="float" name="I">I</field>
+      <field type="float" name="D">D</field>
+      <field type="float" name="Total">Total</field>
+    </message>
+
     <!-- ardupilot specific mavlink2 messages starting at 11000-->
     <message id="11000" name="DEVICE_OP_READ">
       <description>Read registers for a device.</description>
