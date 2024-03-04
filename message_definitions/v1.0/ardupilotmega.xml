@@ -1631,9 +1631,16 @@
       <field type="float" name="rpm1">RPM Sensor1.</field>
       <field type="float" name="rpm2">RPM Sensor2.</field>
     </message>
-    <message id="228" name="TEST_MESSAGE">
-      <description>test adding a message.</description>
-      <field type="uint8_t" name="callcount">callcount.</field>
+    <message id="228" name="CUSTOM_PID_STATE">
+      <description>State of a custom PID controller.</description>
+      <field type="char[16]" name="name">Controller Name</field>
+      <field type="float" name="input">Input.</field>
+      <field type="float" name="target">Target</field>
+      <field type="float" name="dt">Timestep</field>
+      <field type="float" name="FF">Feed Forward</field>
+      <field type="float" name="P">Proportional</field>
+      <field type="float" name="I">Integral</field>
+      <field type="float" name="D">Derivative</field>
     </message>
     <!-- ardupilot specific mavlink2 messages starting at 11000-->
     <message id="11000" name="DEVICE_OP_READ">
